@@ -12,5 +12,6 @@
         <p>Szöveges értékelés: {{ $feladat->szoveges_ert }}</p>
         <p>Pontszám: {{ $feladat->pontszam }} / 100</p>
     </div>
+    <a href="{{ route('feladatok.edit', $feladat->id) }}">Értékel</a>
 </body>
 </html>
